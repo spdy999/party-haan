@@ -1,0 +1,4 @@
+[submodule "party-haan-be"]
+	path = party-haan-be
+	url = https://github.com/spdy999/party-haan-be.git
+	branch = master
