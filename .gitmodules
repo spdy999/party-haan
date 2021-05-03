@@ -2,3 +2,7 @@
 	path = party-haan-be
 	url = https://github.com/spdy999/party-haan-be.git
 	branch = master
+[submodule "party-haan-fe"]
+	path = party-haan-fe
+	url = https://github.com/spdy999/party-haan-fe.git
+	branch = master

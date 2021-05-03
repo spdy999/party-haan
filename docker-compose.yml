@@ -19,6 +19,21 @@ services:
       - webnet
     depends_on:
       - postgres
+  client:
+    container_name: client
+    build:
+      context: ./party-haan-fe
+      target: development
+    volumes:
+      - ./party-haan-fe:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - ${CLIENT_PORT}:${CLIENT_PORT}
+    command: npm run dev
+    env_file:
+      - .env
+    networks:
+      - webnet
   postgres:
     container_name: postgres
     image: postgres:12
