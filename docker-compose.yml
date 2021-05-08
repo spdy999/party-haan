@@ -22,14 +22,14 @@ services:
   client:
     container_name: client
     build:
-      context: ./party-haan-fe
+      context: ./party-haan-react
       target: development
     volumes:
-      - ./party-haan-fe:/usr/src/app
+      - ./party-haan-react:/usr/src/app
       - /usr/src/app/node_modules
     ports:
       - ${CLIENT_PORT}:${CLIENT_PORT}
-    command: npm run dev
+    command: npm start
     env_file:
       - .env
     networks:

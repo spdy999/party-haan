@@ -6,3 +6,7 @@
 	path = party-haan-fe
 	url = https://github.com/spdy999/party-haan-fe.git
 	branch = master
+[submodule "party-haan-react"]
+	path = party-haan-react
+	url = https://github.com/spdy999/party-haan-react.git
+	branch = master
