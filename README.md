@@ -1,9 +1,10 @@
 # PartyHaan Set up
 1. `git clone --recurse-submodules https://github.com/spdy999/party-haan.git`
-2. Copy `.env.example` to `.env`
-3. Start a project by
+2. `cd party-haan`
+3. Copy `.env.example` to `.env`
+4. Start a project by
    -  `docker-compose up`
-4. Go to `http://localhost:3000/login`
+5. Go to `http://localhost:3000/login`
 
 # Test back end
 1. `cd party-haan-be`
